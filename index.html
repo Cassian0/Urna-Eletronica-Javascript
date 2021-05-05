@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Urna Eletrônica</title>
+  </head>
+
+  <body>
+
+    <div class="urn">
+
+        <div class="screen">
+            <div class="first--division">
+              <div class="first--division-left">
+                  <div class="first--division-first-text">
+                    <span>SEU VOTO PARA:</span>
+                  </div>
+                  <div class="first--division-second-text">
+                    <span>VEREADOR</span>
+                  </div>
+                  <div class="first--division-input">
+                    <div class="numbers flash"></div>
+                    <div class="numbers"></div>
+                  </div>
+                  <div class="first--division-show">
+                    ...
+                  </div>
+              </div>
+              <div class="first--division-right">
+                <div class="first--division-images">
+                  <img src="images/84.jpg" alt="">
+                  Prefeito
+                </div>
+                <div class="first--division-images small">
+                  <img src="images/84_2.jpg" alt="">
+                  Vice-Prefeito
+                </div>
+              </div>
+            </div>
+
+            <div class="second--division">
+              Aperte a tecla: <br />
+              CONFIRMA para CONFIRMAR este voto <br />
+              CORRIGE PARA REINICIAR este voto 
+            </div>
+        </div>
+
+        <div class="keyboard">
+            <div class="keyboard--line">
+              <div class="keyboard--button" onclick="clickIn('1')">1</div>
+              <div class="keyboard--button" onclick="clickIn('2')">2</div>
+              <div class="keyboard--button" onclick="clickIn('3')">3</div>
+            </div>
+
+            <div class="keyboard--line">
+              <div class="keyboard--button" onclick="clickIn('4')">4</div>
+              <div class="keyboard--button" onclick="clickIn('5')">5</div>
+              <div class="keyboard--button" onclick="clickIn('6')">6</div>
+            </div>
+
+            <div class="keyboard--line">
+              <div class="keyboard--button" onclick="clickIn('7')">7</div>
+              <div class="keyboard--button" onclick="clickIn('8')">8</div>
+              <div class="keyboard--button" onclick="clickIn('9')">9</div>
+            </div>
+
+            <div class="keyboard--line">
+              <div class="keyboard--button" onclick="clickIn('0')">0</div>
+            </div>
+
+            <div class="keyboard--line">
+              <div class="keyboard--button btn-white" onclick="clickWhite()">BRANCO</div>
+              <div class="keyboard--button btn-correct" onclick="clickCorrect()">CORRIGE</div>
+              <div class="keyboard--button btn-confirm" onclick="clickConfirm()">CONFIRMA</div>
+            </div>
+        </div>
+
+    </div>
+
+      <script src="stages.js"></script>
+      <script src="script.js"></script>
+  </body>
+
+</html>

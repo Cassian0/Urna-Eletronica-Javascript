@@ -1,0 +1,179 @@
+/*Animação de seleção piscando*/
+@keyframes flash {
+  0% {opacity: 0.2;}
+  50% {opacity: 1;}
+  100% {opacity: 0.2;}
+  
+}
+
+body {
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Urna*/
+.urn {
+  display: flex;
+  background-color: #dbd5c9;
+  padding: 30px;
+}
+
+/*Tela*/
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 330px;
+  background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  border: 2px solid #555;
+}
+
+/*Teclado*/
+.keyboard {
+  margin-left: 30px;
+  background-color: #403a3a;
+}
+
+/*Linha do teclado */
+.keyboard--line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*Botões do teclado*/
+.keyboard--button {
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #000;
+  box-shadow: 3px 3px 0px #555;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/*Botões Especiais*/
+.btn-white {
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+}
+
+.btn-correct {
+  background-color: #f09046;
+  color: #000;
+  font-size: 15px;
+}
+
+.btn-confirm {
+  width: 85px;
+  height: 45px;
+  background-color: #48c079;
+  color: #000;
+  font-size: 15px;
+}
+
+/*Divisões da Tela*/
+.first--division {
+  flex: 1;
+  display: flex;
+}
+
+/*Divisão tela da esquerda*/
+.first--division-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.first--division-first-text {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.first--division-second-text {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.first--division-input {
+  display: flex;
+  height: 50px;
+}
+.numbers {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+/*Parâmetros da animação*/
+.flash{
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.first--division-show {
+  flex: 1;
+  line-height: 30px;
+}
+
+/*Divisão tela da direita*/
+.first--division-right {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.first--division-images {
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+.first--division-images img {
+  width: 100%;
+}
+.first--division-images.small{
+  width: 80%;
+  font-size: 12px;
+}
+
+/*Divisão da tela inferior*/
+.second--division {
+  height: 50px;
+  font-size: 14px;
+  border-top: 2px solid #000;
+  padding-left: 10px;
+}
+
+/*Avisos de Tela*/
+.big-warning {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bigest-warning {
+  font-size: 70PX;
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
